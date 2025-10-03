@@ -181,7 +181,8 @@
       const percentageGenerator = function () {
         toggleFn();
         clearForm();
-        const lovePercentage = Math.floor(Math.random() * 100 + 1);
+        let lovePercentage = 0;
+        lovePercentage = Math.floor(Math.random() * 100 + 1);
         if (lovePercentage >= 100) {
           message.textContent = `Wow, you're a perfect match! 💖 /n ${lovePercentage}%`;
         } else if (lovePercentage >= 75) {
@@ -201,3 +202,4 @@
     </script>
   </body>
 </html>
+
